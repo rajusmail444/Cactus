@@ -1,2 +1,7 @@
 # Cactus
-Cactus demo app is built on flutter to demo CICD using Jenkins Pipeline, Fastlane and Firebase
+Cactus demo app is built on **Flutter** to demo **Continuous integration/continuous delivery (CI/CD)** using **Jenkins Pipeline, Fastlane** and **Firebase**
+
+## Prerequisites
+- Jenkins
+- Fastlane
+- Firebase account
