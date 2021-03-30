@@ -1,0 +1,25 @@
+pipeline {
+  agent any
+  options {
+    ansiColor('xterm')
+  }
+  stages {
+    stage('Checkout workspace') {
+      steps {
+        sh 'echo Checkout workspace'
+      }
+    }
+    stage('Install dependencies') {
+      steps { dir("android") {
+        sh 'echo Install dependencies' }
+      }
+    }
+    stage('Android Unit tests') {
+      steps {
+        dir("android") {
+          sh 'echo unit tests'
+        }
+      }
+    }
+  }
+}
